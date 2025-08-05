@@ -82,3 +82,39 @@ body {
   top: 0; /* Alinha o marcador ao topo do item */
   color: #1976d2; /* Define a cor do marcador como azul médio */
 }
+
+/* Estilo do contêiner do menu */
+.menu {
+  display: flex; /* Usa Flexbox para posicionar os itens do menu */
+  gap: 20px; /* Espaço entre os elementos filhos do menu */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  width: 100%; /* Ocupa toda a largura disponível */
+}
+
+/* Estilo da lista dentro do menu */
+.menu ul {
+  list-style: none; /* Remove os marcadores padrão */
+  padding: 0px; /* Remove o preenchimento da lista */
+  margin: 0px; /* Remove a margem da lista */
+  display: flex; /* Usa Flexbox para dispor os itens horizontalmente */
+  width: 100%; /* Ocupa toda a largura do contêiner */
+  flex-basis: 100%; /* Garante que ocupe toda a base disponível */
+  flex-grow: 1; /* Permite que cresça conforme o espaço disponível */
+  justify-content: space-between; /* Distribui os itens com espaço igual entre eles */
+}
+
+/* Estilo de cada item do menu */
+.menu li {
+  background-color: #30A6E6; /* Define uma cor de fundo azul para os itens */
+  padding: 10px; /* Espaçamento interno nos itens */
+  flex: 1; /* Faz com que todos os itens tenham a mesma largura */
+  text-align: center; /* Centraliza o texto dos itens */
+  margin: 0 1px; /* Adiciona um pequeno espaço entre os itens */
+}
+
+/* Estilo dos links dentro dos itens do menu */
+.menu a {
+  color: #ffffff; /* Cor do texto dos links em branco */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  display: block; /* Faz o link ocupar todo o espaço do item */
+}

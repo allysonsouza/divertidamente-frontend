@@ -1,96 +1,81 @@
 /* Reset básico */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Remove margens padrão de todos os elementos */
+  padding: 0; /* Remove preenchimento padrão de todos os elementos */
+  box-sizing: border-box; /* Faz com que largura e altura incluam padding e borda */
 }
 
 /* Fonte e fundo */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom, #f0f8ff, #d1e7ff);
-  color: #333;
-  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte principal da página */
+  background: linear-gradient(to bottom, #f0f8ff, #d1e7ff); /* Aplica um degradê de azul claro como fundo */
+  color: #333; /* Define a cor padrão do texto como cinza escuro */
+  padding: 40px 20px; /* Espaçamento interno nas bordas do body */
 }
 
-/* Cabeçalho */
-h1 {
-  font-size: 2.5rem;
-  color: #1a237e;
-  margin-bottom: 30px;
-  text-align: center;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+/* Caixa única */
+.caixa-de-texto {
+  background: #ffffffcc; /* Fundo branco com transparência (80%) */
+  border: 2px solid #90caf9; /* Borda azul clara */
+  border-radius: 16px; /* Arredonda os cantos da caixa */
+  padding: 30px; /* Espaçamento interno da caixa */
+  max-width: 900px; /* Largura máxima da caixa */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Sombra suave ao redor da caixa */
 }
 
-/* Lista principal estilizada como cards */
-ol {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+/* Título */
+.caixa-de-texto h1 {
+  font-size: 2.5rem; /* Tamanho grande para o título */
+  color: #1a237e; /* Azul escuro para destaque */
+  margin-bottom: 30px; /* Espaço abaixo do título */
+  text-align: center; /* Centraliza o texto */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* Sombra leve no texto para profundidade */
 }
 
-/* Cada item vira um “card” */
-ol > li {
-  background: #fff;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform .2s, box-shadow .2s;
+/* Lista principal */
+.caixa-de-texto ol {
+  list-style: decimal; /* Usa números como marcadores */
+  padding-left: 20px; /* Espaço à esquerda para os números */
 }
 
-ol > li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+.caixa-de-texto ol > li {
+  margin-bottom: 20px; /* Espaço entre os itens da lista principal */
 }
 
-/* Título do card */
-ol > li > strong {
-  display: flex;
-  align-items: center;
-  font-size: 1.2rem;
-  color: #0d47a1;
-  margin-bottom: 10px;
+/* Título de cada curiosidade */
+.caixa-de-texto strong {
+  display: inline-flex; /* Permite alinhar emoji e texto lado a lado */
+  align-items: center; /* Alinha verticalmente o emoji com o texto */
+  font-size: 1.2rem; /* Tamanho do texto do título da curiosidade */
+  color: #0d47a1; /* Azul escuro para destaque */
+  margin-bottom: 8px; /* Espaço abaixo do título */
 }
 
-/* Aumenta o emoji do título */
-ol > li > strong::before {
-  content: attr(data-emoji);
-  margin-right: 8px;
-  font-size: 1.4rem;
+/* Emoji antes do título */
+.caixa-de-texto strong::before {
+  content: attr(data-emoji); /* Insere o emoji definido no atributo data-emoji */
+  margin-right: 8px; /* Espaço entre o emoji e o texto */
+  font-size: 1.4rem; /* Tamanho maior para o emoji */
 }
 
 /* Lista interna */
-ul {
-  list-style: none;
-  padding-left: 0;
+.caixa-de-texto ul {
+  list-style: none; /* Remove os marcadores padrão da lista */
+  padding-left: 0; /* Remove o recuo padrão da lista */
 }
 
-ul > li {
-  position: relative;
-  padding-left: 24px;
-  margin-bottom: 6px;
-  line-height: 1.4;
+.caixa-de-texto ul > li {
+  position: relative; /* Permite posicionar o marcador personalizado */
+  padding-left: 24px; /* Espaço à esquerda para o marcador */
+  margin-bottom: 6px; /* Espaço entre os itens da lista interna */
+  line-height: 1.4; /* Altura da linha para melhor legibilidade */
 }
 
-ul > li::before {
-  content: '•';
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #1976d2;
+.caixa-de-texto ul > li::before {
+  content: '•'; /* Insere um marcador personalizado (bolinha) */
+  position: absolute; /* Posiciona o marcador em relação ao item */
+  left: 0; /* Alinha o marcador à esquerda */
+  top: 0; /* Alinha o marcador ao topo do item */
+  color: #1976d2; /* Cor azul para o marcador */
 }
-
-/* Destaque de cores por curiosidade (opcional) */
-ol > li:nth-child(1) { border-top: 4px solid #43a047; }
-ol > li:nth-child(2) { border-top: 4px solid #e53935; }
-ol > li:nth-child(3) { border-top: 4px solid #1e88e5; }
-ol > li:nth-child(4) { border-top: 4px solid #fb8c00; }
-ol > li:nth-child(5) { border-top: 4px solid #8e24aa; }
-ol > li:nth-child(6) { border-top: 4px solid #00acc1; }
-ol > li:nth-child(7) { border-top: 4px solid #fdd835; }
-ol > li:nth-child(8) { border-top: 4px solid #6d4c41; }
-ol > li:nth-child(9) { border-top: 4px solid #00695c; }
-ol > li:nth-child(10){ border-top: 4px solid #c2185b; }
-ol > li:nth-child(11){ border-top: 4px solid #455a64; }
-ol > li:nth-child(12){ border-top: 4px solid #d32f2f; }

@@ -1,70 +1,72 @@
 /* Reset básico */
 * {
-  margin: 0; /* Remove margens padrão de todos os elementos */
-  padding: 0; /* Remove preenchimento padrão de todos os elementos */
+  margin: 0; /* Remove todas as margens padrão dos elementos */
+  padding: 0; /* Remove todos os preenchimentos padrão dos elementos */
   box-sizing: border-box; /* Faz com que largura e altura incluam padding e borda */
 }
 
-/* Fonte e fundo */
+/* Estilo geral do corpo da página */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte principal da página */
-  background: linear-gradient(to bottom, #f0f8ff, #d1e7ff); /* Aplica um degradê de azul claro como fundo */
+  background: linear-gradient(to bottom, #f0f8ff, #d1e7ff); /* Aplica um fundo com degradê azul claro */
   color: #333; /* Define a cor padrão do texto como cinza escuro */
-  padding: 40px 20px; /* Espaçamento interno nas bordas do body */
+  padding: 40px 20px; /* Adiciona espaçamento interno ao redor do conteúdo */
 }
 
-/* Caixa única */
+/* Estilo da caixa principal que envolve o conteúdo */
 .caixa-de-texto {
-  background: #ffffffcc; /* Fundo branco com transparência (80%) */
-  border: 2px solid #90caf9; /* Borda azul clara */
+  background: #ffffffcc; /* Fundo branco com 80% de opacidade */
+  border: 2px solid #90caf9; /* Borda azul clara ao redor da caixa */
   border-radius: 16px; /* Arredonda os cantos da caixa */
-  padding: 30px; /* Espaçamento interno da caixa */
-  max-width: 900px; /* Largura máxima da caixa */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Sombra suave ao redor da caixa */
+  padding: 30px; /* Espaçamento interno dentro da caixa */
+  max-width: 900px; /* Define a largura máxima da caixa */
+  margin: 0 auto; /* Centraliza a caixa horizontalmente na página */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Adiciona uma sombra suave ao redor da caixa */
 }
 
-/* Título */
+/* Estilo do título principal dentro da caixa */
 .caixa-de-texto h1 {
-  font-size: 2.5rem; /* Tamanho grande para o título */
-  color: #1a237e; /* Azul escuro para destaque */
+  font-size: 2.5rem; /* Define um tamanho grande para o título */
+  color: #1a237e; /* Define a cor do título como azul escuro */
   margin-bottom: 30px; /* Espaço abaixo do título */
-  text-align: center; /* Centraliza o texto */
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* Sombra leve no texto para profundidade */
+  text-align: center; /* Centraliza o texto do título */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* Adiciona uma sombra leve ao texto para profundidade */
 }
 
-/* Lista principal */
+/* Estilo da lista ordenada principal */
 .caixa-de-texto ol {
-  list-style: decimal; /* Usa números como marcadores */
-  padding-left: 20px; /* Espaço à esquerda para os números */
+  list-style: decimal; /* Usa números como marcadores da lista */
+  padding-left: 20px; /* Espaço à esquerda para os números da lista */
 }
 
+/* Estilo de cada item da lista principal */
 .caixa-de-texto ol > li {
   margin-bottom: 20px; /* Espaço entre os itens da lista principal */
 }
 
-/* Título de cada curiosidade */
+/* Estilo do título de cada curiosidade */
 .caixa-de-texto strong {
-  display: inline-flex; /* Permite alinhar emoji e texto lado a lado */
+  display: inline-flex; /* Permite alinhar o emoji e o texto lado a lado */
   align-items: center; /* Alinha verticalmente o emoji com o texto */
-  font-size: 1.2rem; /* Tamanho do texto do título da curiosidade */
-  color: #0d47a1; /* Azul escuro para destaque */
-  margin-bottom: 8px; /* Espaço abaixo do título */
+  font-size: 1.2rem; /* Define o tamanho do texto do título da curiosidade */
+  color: #0d47a1; /* Define a cor do texto como azul escuro */
+  margin-bottom: 8px; /* Espaço abaixo do título da curiosidade */
 }
 
-/* Emoji antes do título */
+/* Estilo para exibir o emoji antes do título */
 .caixa-de-texto strong::before {
   content: attr(data-emoji); /* Insere o emoji definido no atributo data-emoji */
-  margin-right: 8px; /* Espaço entre o emoji e o texto */
-  font-size: 1.4rem; /* Tamanho maior para o emoji */
+  margin-right: 8px; /* Espaço entre o emoji e o texto do título */
+  font-size: 1.4rem; /* Define um tamanho maior para o emoji */
 }
 
-/* Lista interna */
+/* Estilo da lista interna (subitens das curiosidades) */
 .caixa-de-texto ul {
   list-style: none; /* Remove os marcadores padrão da lista */
   padding-left: 0; /* Remove o recuo padrão da lista */
 }
 
+/* Estilo de cada item da lista interna */
 .caixa-de-texto ul > li {
   position: relative; /* Permite posicionar o marcador personalizado */
   padding-left: 24px; /* Espaço à esquerda para o marcador */
@@ -72,10 +74,11 @@ body {
   line-height: 1.4; /* Altura da linha para melhor legibilidade */
 }
 
+/* Estilo do marcador personalizado da lista interna */
 .caixa-de-texto ul > li::before {
   content: '•'; /* Insere um marcador personalizado (bolinha) */
   position: absolute; /* Posiciona o marcador em relação ao item */
-  left: 0; /* Alinha o marcador à esquerda */
+  left: 0; /* Alinha o marcador à esquerda do item */
   top: 0; /* Alinha o marcador ao topo do item */
-  color: #1976d2; /* Cor azul para o marcador */
+  color: #1976d2; /* Define a cor do marcador como azul médio */
 }

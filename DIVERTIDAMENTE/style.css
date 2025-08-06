@@ -89,6 +89,9 @@ body {
   gap: 20px; /* Espaço entre os elementos filhos do menu */
   align-items: center; /* Alinha os itens verticalmente ao centro */
   width: 100%; /* Ocupa toda a largura disponível */
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
 }
 
 /* Estilo da lista dentro do menu */
@@ -105,7 +108,8 @@ body {
 
 /* Estilo de cada item do menu */
 .menu li {
-  background-color: #30A6E6; /* Define uma cor de fundo azul para os itens */
+  /* background-color: #30A6E6; Define uma cor de fundo azul para os itens */
+  background: linear-gradient(to right, #0800ff, #2575fc); /* roxo para azul */
   padding: 10px; /* Espaçamento interno nos itens */
   flex: 1; /* Faz com que todos os itens tenham a mesma largura */
   text-align: center; /* Centraliza o texto dos itens */
@@ -117,4 +121,9 @@ body {
   color: #ffffff; /* Cor do texto dos links em branco */
   text-decoration: none; /* Remove o sublinhado dos links */
   display: block; /* Faz o link ocupar todo o espaço do item */
+}
+
+.menu a:hover {
+    /*background-color: #3f9041;*/
+    color: #ff6f00; /* Altera a cor do texto para laranja ao passar o mouse sobre o link */
 }

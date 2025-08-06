@@ -129,5 +129,5 @@ body {
 }
 
 footer {
-  text-align: center;
+  text-align: center; /* Centraliza o conteúdo do rodapé horizontalmente */
 }

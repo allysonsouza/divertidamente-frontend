@@ -127,3 +127,7 @@ body {
     /*background-color: #3f9041;*/
     color: #ff6f00; /* Altera a cor do texto para laranja ao passar o mouse sobre o link */
 }
+
+footer {
+  text-align: center;
+}

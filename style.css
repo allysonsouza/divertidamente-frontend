@@ -1,34 +1,52 @@
 html {
-	background-color: #1A1D29;
-	color: #ffffff;
+	border-left: 1px #4a5759;
+	border-right: 1px #4a5759;
+	background-color: #ffffff;
+	color: #000000;
 	font-family: Century Gothic;
-	margin: 0px;
-	padding: 10px 200px;
+	margin: 0px 200px;
+	padding: 0px;
 	text-align: center;
+	box-shadow: 0px 2px 9px 0px;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
 }
 
 .intro {
-	margin: 50px 200px;
-	display: flex;
-	align-items: center;
-	gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  max-width: 800px;
+  gap: 40px;
 }
 
 .intro img {
-	width: 300px;
-	height: auto;
+  width: 250px;
+  height: auto;
+  border: 1px;
 }
 
 .intro-texto {
-	display: flex;
-	text-align: left;
-	flex-direction: column;
-	gap: 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 0px;
+  padding-top: 40px;
+}
+
+.sinopse {
+	line-height: 1.6;
+	padding: 0px 75px;
 }
 
 .menu {
+	margin-top: 20px;
 	display: flex;
-	gap: 20px;
+	gap: 0px;
 	align-items: center;
 	width: 100%;
 }
@@ -45,7 +63,7 @@ html {
 }
 
 .menu li {
-	background-color: #30A6E6;
+	background-color: #000814;
 	padding: 10px;
 	flex: 1;
 	text-align: center;
@@ -56,15 +74,140 @@ html {
 	color: #ffffff;
 	text-decoration: none;
 	display: block;
-
 }
 
-.plataformas a{
+.dias-sessao {
+	padding: 10px 0px;
+	display: flex;
+	text-align: left;
+	flex-direction: column;
+	gap: 0px;	
+}
+
+.dias-sessao ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	width: 100%;
+	flex-basis: 100%;
+	flex-grow: 1;
+	justify-content: space-between;
+}
+
+.dias-sessao li {
+	list-style: none;
+	background-color: #012a4a;
+	padding: 10px;
+	flex: 1;
+	text-align: center;
+	margin: 0 1px;
+}
+
+.dias-sessao a {
 	color: #ffffff;
+	text-decoration: none;
+	display: block;
+}
+
+.agenda div {
+	padding: 0px;
+	margin: 0px;
+}
+
+.agenda ul {
+	list-style: none;	
+	padding: 0px;
+	margin: 0px;
+}
+
+.agenda h2 {
+	margin: 0px;
+	margin-block: none;
+	text-align: center;
+}
+
+.plataformas {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.plataformas div {
+	flex: 1 0 50%;
+	margin: 0px;
+	padding: 10px;
+	margin: 0px 220px;
+	border: 1px solid #4a5759;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.plataformas a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.plataformas p {
+	margin: 18px 0px 14px 0px;
 }
 
 .disney{
-	margin: 50px 600px;
+	display: flex;
+	align-items: left;
+	gap: 10px;
+	justify-content: center;
+	margin: 25px auto;
+	max-width: 800px;
+}
+
+.google{
+	display: flex;
+	align-items: left;
+	gap: 10px;
+	justify-content: center;
+	margin: 25px auto;
+	max-width: 800px;
+}
+
+.google img {
+	border-radius: 25%;
+}
+
+.apple{
 	display: flex;
 	align-items: center;
 	gap: 10px;
+	justify-content: center;
+	margin: 25px auto;
+	max-width: 800px;
+}
+
+.apple img {
+	border-radius: 25%;
+}
+
+.cinema{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	justify-content: center;
+	margin: 25px auto;
+	max-width: 800px;
+}
+
+.cinema img {
+	border-radius: 25%;
+}
+
+footer {
+	margin: 0px;
+	padding: 0px;
+	background-color: #e0e1dd;
+}
+
+footer p {
+	margin: 20px 0px 0px 0px;
+	padding: 20px 0px 20px 0px;
+}

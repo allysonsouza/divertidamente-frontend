@@ -56,4 +56,15 @@ html {
 	color: #ffffff;
 	text-decoration: none;
 	display: block;
+
 }
+
+.plataformas a{
+	color: #ffffff;
+}
+
+.disney{
+	margin: 50px 600px;
+	display: flex;
+	align-items: center;
+	gap: 10px;

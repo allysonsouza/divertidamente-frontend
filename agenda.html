@@ -1,374 +1,88 @@
-<!doctype html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Divertidamente</title>
-    <link rel="stylesheet" href="style.css">
+<!DOCTYPE html> <!-- Declara que o documento está usando HTML5 -->
+<html lang="pt-br"> <!-- Início do HTML, com idioma definido como português do Brasil -->
+<head> <!-- Cabeçalho da página -->
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+  <title>Agenda de Cinema</title> <!-- Título da aba do navegador -->
+  <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo CSS externo -->
 </head>
 
-<body>
-    <header>
-        <img src="https://sucessobrindes.com.br/wp-content/uploads/2015/06/banner-divertidamente-2.jpg" width="600"
-            alt="Banner do filme Divertidamente">
+<body> <!-- Início do corpo da página visível ao usuário -->
 
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="agenda.html">Programação/Agenda</a></li>
-                <li><a href="personagens.html">Personagens</a></li>
-                <li><a href="curiosidades.html">Curiosidades</a></li>
-            </ul>
-        </nav>
-    </header>
+  <h1>🎬 Agenda Semanal do Cinema</h1> <!-- Título principal da página -->
 
-    <main>
-        <h1>Selecione a data desejada</h1>
+  <div class="agenda"> <!-- Container principal da agenda com todos os dias da semana -->
 
-        <nav class="dias-sessao">
-            <ul>
-                <li><a href="#08">08.08</a></li>
-                <li><a href="#09">09.08</a></li>
-                <li><a href="#10">10.08</a></li>
-                <li><a href="#11">11.08</a></li>
-                <li><a href="#12">12.08</a></li>
-                <li><a href="#13">13.08</a></li>
-                <li><a href="#14">14.08</a></li>
-                <li><a href="#15">15.08</a></li>
-                <li><a href="#16">16.08</a></li>
-                <li><a href="#17">17.08</a></li>
-            </ul>
-        </nav>
+    <!-- Segunda-feira -->
+    <div class="dia"> <!-- Bloco para o dia da semana -->
+      <h2>Segunda</h2> <!-- Título com o nome do dia -->
+      <div class="filme"> <!-- Bloco do filme exibido nesse dia -->
+        <h3>Oppenheimer</h3> <!-- Nome do filme -->
+        <p><strong>Horários:</strong> 14:00, 18:00, 21:30</p> <!-- Sessões disponíveis -->
+        <p><strong>Sinopse:</strong> A história do físico J. Robert Oppenheimer e o desenvolvimento da bomba atômica.</p> <!-- Sinopse do filme -->
+      </div>
+    </div>
 
-        <div class="agenda">
+    <!-- Terça-feira -->
+    <div class="dia">
+      <h2>Terça</h2>
+      <div class="filme">
+        <h3>Barbie</h3>
+        <p><strong>Horários:</strong> 13:00, 17:00, 20:00</p>
+        <p><strong>Sinopse:</strong> Barbie embarca numa jornada no mundo real para descobrir o verdadeiro significado da vida.</p>
+      </div>
+    </div>
 
-            <h1 id="08">Horários Sexta - 08/08</h1>
-            <ul>
-                <li>
-                    <h2>Cinemark Tamboré</h2>
-                    <p>19h30 | 20h00 | 21h15 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinemark Cotia</h2>
-                    <p>17h30 | 20h10 | 20h45 | 22h30</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Osasco</h2>
-                    <p>19h15 | 20h00 | 20h15 | 21h00 | 21h45 | 22h20</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Barueri</h2>
-                    <p>17h10 | 19h45 | 20h30 | 21h25 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinemark Raposo Shopping</h2>
-                    <p>15h30 | 16h10 | 19h45 | 20h30 | 21h00 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Carapicuíba</h2>
-                    <p>19h25 | 20h20 | 20h55 | 21h20 | 21h55 | 22h25</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Shopping Maia</h2>
-                    <p>20h10 | 20h45 | 22h25</p><hr>
-                </li>
-            </ul>
+    <!-- Quarta-feira -->
+    <div class="dia">
+      <h2>Quarta</h2>
+      <div class="filme">
+        <h3>Divertidamente 2</h3>
+        <p><strong>Horários:</strong> 15:00, 19:00</p>
+        <p><strong>Sinopse:</strong> Novas emoções chegam à mente da adolescente Riley trazendo desafios divertidos e caóticos.</p>
+      </div>
+    </div>
 
-            <h1 id="09">Horários Sábado - 09/08</h1>
-            <ul>
-                <li>
-                    <h2>Cinemark Tamboré</h2>
-                    <p>19h30 | 20h00 | 21h15 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinemark Cotia</h2>
-                    <p>17h30 | 20h10 | 20h45 | 22h30</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Osasco</h2>
-                    <p>19h15 | 20h00 | 20h15 | 21h00 | 21h45 | 22h20</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Barueri</h2>
-                    <p>17h10 | 19h45 | 20h30 | 21h25 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinemark Raposo Shopping</h2>
-                    <p>15h30 | 16h10 | 19h45 | 20h30 | 21h00 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Carapicuíba</h2>
-                    <p>19h25 | 20h20 | 20h55 | 21h20 | 21h55 | 22h25</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Shopping Maia</h2>
-                    <p>20h10 | 20h45 | 22h25</p><hr>
-                </li>
-            </ul>
-			
-			<h1 id="10">Horários Domingo - 10/08</h1>
-            <ul>
-                <li>
-                    <h2>Cinemark Tamboré</h2>
-                    <p>19h30 | 20h00 | 21h15 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinemark Cotia</h2>
-                    <p>17h30 | 20h10 | 20h45 | 22h30</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Osasco</h2>
-                    <p>19h15 | 20h00 | 20h15 | 21h00 | 21h45 | 22h20</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Barueri</h2>
-                    <p>17h10 | 19h45 | 20h30 | 21h25 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinemark Raposo Shopping</h2>
-                    <p>15h30 | 16h10 | 19h45 | 20h30 | 21h00 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Carapicuíba</h2>
-                    <p>19h25 | 20h20 | 20h55 | 21h20 | 21h55 | 22h25</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Shopping Maia</h2>
-                    <p>20h10 | 20h45 | 22h25</p><hr>
-                </li>
-            </ul>
-			
-			<h1 id="11">Horários Segunda - 11/08</h1>
-            <ul>
-                <li>
-                    <h2>Cinemark Tamboré</h2>
-                    <p>19h30 | 20h00 | 21h15 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinemark Cotia</h2>
-                    <p>17h30 | 20h10 | 20h45 | 22h30</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Osasco</h2>
-                    <p>19h15 | 20h00 | 20h15 | 21h00 | 21h45 | 22h20</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Barueri</h2>
-                    <p>17h10 | 19h45 | 20h30 | 21h25 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinemark Raposo Shopping</h2>
-                    <p>15h30 | 16h10 | 19h45 | 20h30 | 21h00 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Carapicuíba</h2>
-                    <p>19h25 | 20h20 | 20h55 | 21h20 | 21h55 | 22h25</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Shopping Maia</h2>
-                    <p>20h10 | 20h45 | 22h25</p><hr>
-                </li>
-            </ul>
-			
-			<h1 id="12">Horários Terça - 12/08</h1>
-            <ul>
-                <li>
-                    <h2>Cinemark Tamboré</h2>
-                    <p>19h30 | 20h00 | 21h15 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinemark Cotia</h2>
-                    <p>17h30 | 20h10 | 20h45 | 22h30</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Osasco</h2>
-                    <p>19h15 | 20h00 | 20h15 | 21h00 | 21h45 | 22h20</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Barueri</h2>
-                    <p>17h10 | 19h45 | 20h30 | 21h25 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinemark Raposo Shopping</h2>
-                    <p>15h30 | 16h10 | 19h45 | 20h30 | 21h00 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Carapicuíba</h2>
-                    <p>19h25 | 20h20 | 20h55 | 21h20 | 21h55 | 22h25</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Shopping Maia</h2>
-                    <p>20h10 | 20h45 | 22h25</p><hr>
-                </li>
-            </ul>
-			
-			<h1 id="13">Horários Quarta - 13/08</h1>
-            <ul>
-                <li>
-                    <h2>Cinemark Tamboré</h2>
-                    <p>19h30 | 20h00 | 21h15 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinemark Cotia</h2>
-                    <p>17h30 | 20h10 | 20h45 | 22h30</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Osasco</h2>
-                    <p>19h15 | 20h00 | 20h15 | 21h00 | 21h45 | 22h20</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Barueri</h2>
-                    <p>17h10 | 19h45 | 20h30 | 21h25 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinemark Raposo Shopping</h2>
-                    <p>15h30 | 16h10 | 19h45 | 20h30 | 21h00 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Carapicuíba</h2>
-                    <p>19h25 | 20h20 | 20h55 | 21h20 | 21h55 | 22h25</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Shopping Maia</h2>
-                    <p>20h10 | 20h45 | 22h25</p><hr>
-                </li>
-            </ul>
-			
-			<h1 id="14">Horários Quinta - 14/08</h1>
-            <ul>
-                <li>
-                    <h2>Cinemark Tamboré</h2>
-                    <p>19h30 | 20h00 | 21h15 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinemark Cotia</h2>
-                    <p>17h30 | 20h10 | 20h45 | 22h30</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Osasco</h2>
-                    <p>19h15 | 20h00 | 20h15 | 21h00 | 21h45 | 22h20</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Barueri</h2>
-                    <p>17h10 | 19h45 | 20h30 | 21h25 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinemark Raposo Shopping</h2>
-                    <p>15h30 | 16h10 | 19h45 | 20h30 | 21h00 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Carapicuíba</h2>
-                    <p>19h25 | 20h20 | 20h55 | 21h20 | 21h55 | 22h25</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Shopping Maia</h2>
-                    <p>20h10 | 20h45 | 22h25</p><hr>
-                </li>
-            </ul>
-			
-			<h1 id="15">Horários Sexta - 15/08</h1>
-            <ul>
-                <li>
-                    <h2>Cinemark Tamboré</h2>
-                    <p>19h30 | 20h00 | 21h15 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinemark Cotia</h2>
-                    <p>17h30 | 20h10 | 20h45 | 22h30</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Osasco</h2>
-                    <p>19h15 | 20h00 | 20h15 | 21h00 | 21h45 | 22h20</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Barueri</h2>
-                    <p>17h10 | 19h45 | 20h30 | 21h25 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinemark Raposo Shopping</h2>
-                    <p>15h30 | 16h10 | 19h45 | 20h30 | 21h00 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Carapicuíba</h2>
-                    <p>19h25 | 20h20 | 20h55 | 21h20 | 21h55 | 22h25</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Shopping Maia</h2>
-                    <p>20h10 | 20h45 | 22h25</p><hr>
-                </li>
-            </ul>
-			
-			<h1 id="16">Horários Sábado - 16/08</h1>
-            <ul>
-                <li>
-                    <h2>Cinemark Tamboré</h2>
-                    <p>19h30 | 20h00 | 21h15 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinemark Cotia</h2>
-                    <p>17h30 | 20h10 | 20h45 | 22h30</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Osasco</h2>
-                    <p>19h15 | 20h00 | 20h15 | 21h00 | 21h45 | 22h20</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Barueri</h2>
-                    <p>17h10 | 19h45 | 20h30 | 21h25 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinemark Raposo Shopping</h2>
-                    <p>15h30 | 16h10 | 19h45 | 20h30 | 21h00 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Carapicuíba</h2>
-                    <p>19h25 | 20h20 | 20h55 | 21h20 | 21h55 | 22h25</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Shopping Maia</h2>
-                    <p>20h10 | 20h45 | 22h25</p><hr>
-                </li>
-            </ul>
-			
-			<h1 id="17">Horários Domingo - 17/08</h1>
-            <ul>
-                <li>
-                    <h2>Cinemark Tamboré</h2>
-                    <p>19h30 | 20h00 | 21h15 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinemark Cotia</h2>
-                    <p>17h30 | 20h10 | 20h45 | 22h30</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Osasco</h2>
-                    <p>19h15 | 20h00 | 20h15 | 21h00 | 21h45 | 22h20</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Barueri</h2>
-                    <p>17h10 | 19h45 | 20h30 | 21h25 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinemark Raposo Shopping</h2>
-                    <p>15h30 | 16h10 | 19h45 | 20h30 | 21h00 | 22h00</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Carapicuíba</h2>
-                    <p>19h25 | 20h20 | 20h55 | 21h20 | 21h55 | 22h25</p><hr>
-                </li>
-                <li>
-                    <h2>Cinépolis Shopping Maia</h2>
-                    <p>20h10 | 20h45 | 22h25</p><hr>
-                </li>
-            </ul>
+    <!-- Quinta-feira -->
+    <div class="dia">
+      <h2>Quinta</h2>
+      <div class="filme">
+        <h3>Duna: Parte 2</h3>
+        <p><strong>Horários:</strong> 16:00, 20:30</p>
+        <p><strong>Sinopse:</strong> Paul Atreides une forças com os Fremen em busca de vingança contra os conspiradores de sua família.</p>
+      </div>
+    </div>
 
-        </div>
-    </main>
+    <!-- Sexta-feira -->
+    <div class="dia">
+      <h2>Sexta</h2>
+      <div class="filme">
+        <h3>Deadpool & Wolverine</h3>
+        <p><strong>Horários:</strong> 18:00, 21:45</p>
+        <p><strong>Sinopse:</strong> A dupla mais insana da Marvel embarca em uma aventura épica cheia de ação e humor.</p>
+      </div>
+    </div>
 
-    <footer>
-        <p>Desenvolvido pela equipe Divertidamente SENAI 2025<br>
-            &copy; Todos os direitos reservados</p>
-    </footer>
-</body>
+    <!-- Sábado -->
+    <div class="dia">
+      <h2>Sábado</h2>
+      <div class="filme">
+        <h3>Homem-Aranha: Através do Aranhaverso</h3>
+        <p><strong>Horários:</strong> 12:30, 16:00, 19:30</p>
+        <p><strong>Sinopse:</strong> Miles Morales viaja por múltiplos universos e encontra diversas versões do Homem-Aranha.</p>
+      </div>
+    </div>
 
-</html>
+    <!-- Domingo -->
+    <div class="dia">
+      <h2>Domingo</h2>
+      <div class="filme">
+        <h3>Os Caça-Fantasmas: Apocalipse de Gelo</h3>
+        <p><strong>Horários:</strong> 13:00, 17:00, 20:00</p>
+        <p><strong>Sinopse:</strong> A nova geração de caça-fantasmas enfrenta uma ameaça congelante que pode destruir o mundo.</p>
+      </div>
+    </div>
+
+  </div> <!-- Fim do container da agenda -->
+
+</body> <!-- Fim do corpo da página -->
+</html> <!-- Fim do HTML -->

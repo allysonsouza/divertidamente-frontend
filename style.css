@@ -40,7 +40,7 @@ body {
 
 .sinopse {
 	line-height: 1.6;
-	padding: 0px 75px;
+	padding: 0px 50px;
 }
 
 .menu {
@@ -211,3 +211,72 @@ footer p {
 	margin: 20px 0px 0px 0px;
 	padding: 20px 0px 20px 0px;
 }
+
+
+.caixa-de-texto strong {
+  display: inline-flex;
+  /* Permite alinhar o emoji e o texto lado a lado */
+  align-items: center;
+  /* Alinha verticalmente o emoji com o texto */
+  font-size: 1.2rem;
+  /* Define o tamanho do texto do título da curiosidade */
+  color: #0d47a1;
+  /* Define a cor do texto como azul escuro */
+  margin-bottom: 8px;
+  /* Espaço abaixo do título da curiosidade */
+}
+
+.caixa-de-texto strong::before {
+  content: attr(data-emoji);
+  /* Insere o emoji definido no atributo data-emoji */
+  margin-right: 8px;
+  /* Espaço entre o emoji e o texto do título */
+  font-size: 1.4rem;
+  /* Define um tamanho maior para o emoji */
+}
+
+.caixa-de-texto ul {
+  list-style: none;
+  /* Remove os marcadores padrão da lista */
+  padding-left: 0;
+  /* Remove o recuo padrão da lista */
+}
+
+.caixa-de-texto ul>li {
+  position: relative
+  /* Permite posicionar o marcador personalizado */
+  padding-left: 24px;
+  /* Espaço à esquerda para o marcador */
+  margin-bottom: 6px;
+  /* Espaço entre os itens da lista interna */
+  line-height: 1.4;
+  /* Altura da linha para melhor legibilidade */
+}
+
+.caixa-de-texto ul>li::before {
+  position: absolute;
+  /* Posiciona o marcador em relação ao item */
+  left: 0;
+  /* Alinha o marcador à esquerda do item */
+  top: 0;
+  /* Alinha o marcador ao topo do item */
+  color: #1976d2;
+  /* Define a cor do marcador como azul médio */
+}
+
+.caixa-de-texto {
+	list-style: none;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+.background {
+      border-radius: 30px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 40px;
+	  background-image:url("imagens/colorido.jpg");
+      color: white  
+	}
